@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <style>
+        .container, .container-1, .container-2{
+            position: fixed;
+            bottom: 0;
+            margin-left: 20px;
+            margin-bottom: 290px;
+            border-bottom: 2px solid red;
+            display: inline-block;
+        }
+        .container-1{
+            margin-bottom: 170px;
+        }
+        .container-2{
+            margin-bottom: 40px;
+        }
+    .one, .two, .three, .four,
+    .five, .six{
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        background-color: aliceblue;
+        animation-iteration-count: infinite;
+        position: relative;
+        animation-direction: alternate-reverse;
+    }
+    .one{
+       
+        animation-name: pitch;
+        animation-duration: 1s;
+    }
+    
+    .two{
+        animation-name: pitch1;
+        animation-duration: 3s;
+    }
+   .three{
+        animation-name: pitch2;
+        animation-duration: 2s;
+        height: 300px;
+    }
+    .four{
+        animation-name: pitch3;
+        animation-duration: 1s;
+    }
+    .five{
+        animation-name: pitch4;
+        animation-duration: 3s;
+    }
+    .six{
+        animation-name: pitch5;
+        animation-duration: 4s;
+    } 
+     @keyframes pitch {
+        from{background-color: brown; bottom: 0; top: 0; height: 0;}
+        to{background-color: black; bottom: 0; top: 0; height: 20px;}
+
+     }
+    
+    @keyframes pitch1 {
+       from{background-color:brown; bottom: 0; top: 0; height: 0;}
+        to{background-color: black; bottom: 0; top: 0; height: 50px;}
+    }
+    @keyframes pitch2 {
+       from{background-color:brown; bottom: 0; top: 0; height: 0;}
+        to{background-color: black; bottom: 0; top: 0; height: 30px;}
+    }
+   @keyframes pitch4 {
+       from{background-color:brown; bottom: 0; top: 0; height: 0;}
+        to{background-color:black; bottom: 0; top: 0; height: 20px;}
+    }
+    @keyframes pitch3 {
+       from{background-color:brown; bottom: 0; top: 0; height: 0;}
+        to{background-color: rgba(14, 16, 1, 0.966); bottom: 0; top: 0; height: 40px;}
+    }
+    @keyframes pitch5 {
+       from{background-color:brown; bottom: 0; top: 0; height: 0;}
+        to{background-color: rgba(7, 7, 7, 0.947); bottom: 0; top: 0; height: 30px;}
+    } 
+</style>
+    </head>
+    <body>
+        <center>
+            <b>Weekend Album</b><br>
+            <img src="weekend.jpg" alt="songs of wknd" width="200" height="200">
+
+            <p>
+               <b> After Hours is the fourth studio album by Canadian singer The Weeknd, released in March 2020. The album is a concept album that tells the story of The Weeknd's journey through heartbreak, fame, and fortune at the end of a relationship.</b>
+            </p>
+            <div style="display: inline-block">
+            <p>01-Star Boy</p>
+           <audio controls>
+            <source src="starboy.mp3">
+           </audio>
+           <a href="starboy.mp3" download="star.mp3"><br><button>Download</button></a>
+            </div>
+
+           <div class="container" >
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+            <div class="six"></div>
+            </div>
+            
+            <div style="display: block;">          
+              <div style="display:inline-block;">
+           <p>02-Can't Feel My Face</p>
+           <audio controls>
+            <source src="Cant-Feel-My-Face.mp3">
+           </audio>
+           <a href="Cant-Feel-My-Face.mp3" download="feelmyface.mp3"><br><button>Download</button></a>
+            </div>
+            <div class="container-1" >
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="four"></div>
+                <div class="five"></div>
+                <div class="six"></div>
+                </div>
+            </div>
+
+           <div>
+           <div style="display: inline-block;">
+           <p>03-The Hills</p>
+           <audio controls>
+            <source src="The Hills.mp3">
+           </audio>
+           <a href="The Hills.mp3" download="hills.mp3"><br><button>Download</button></a>
+           </div>
+           <div class="container-2" >
+            <div class="one"></div>
+            <div class="two"></div>
+            <div class="three"></div>
+            <div class="four"></div>
+            <div class="five"></div>
+            <div class="six"></div>
+            </div>
+           </div>
+        </center>
+    </body>
+</html>

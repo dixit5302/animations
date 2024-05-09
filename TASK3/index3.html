@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            body{
+                background-color: black;
+            }
+        .ball1, .ball2, .ball3, .ball4{
+            display: inline-block;
+           margin-top: 50px;
+           margin-left: 50px;
+           width: 200px;
+           height: 200px;
+           position: relative;
+           top: 0;
+           left: 0;
+           border-radius: 50%;     
+           animation-iteration-count: infinite;   
+        }
+        .ball1{
+            border: 2px solid rgb(35, 35, 235);
+           background-color: rgb(35, 35, 235);
+           animation-name: blueball;
+            animation-duration: 1s; 
+          animation-direction: alternate-reverse;
+        }
+        .ball2{
+            background-color: red;
+            border: 2px solid red;
+            animation-name: redball;
+            animation-duration: 2s;
+           animation-direction: alternate;
+        }
+        .ball3{
+            background-color: green;
+            border: 2px solid green;
+            animation-name: greenball;
+            animation-duration: 3s; 
+           animation-direction: alternate-reverse;
+        } 
+         .ball4{
+            background-color:yellow;
+            border: 2px solid yellow;
+            animation-name: yellowball;
+            animation-duration: 1s; 
+           animation-direction: alternate;
+        }
+        @keyframes blueball {
+            from{top: 0px; }
+            to{ top: 300px; }
+        }
+        @keyframes redball {
+            from{top: 0px; }
+            to{ top: 300px; }
+        }
+        @keyframes greenball {
+            from{top: 0px; }
+            to{ top: 300px; }
+        }
+        @keyframes yellowball {
+            from{top: 0px; }
+            to{ top: 300px; }
+        }
+    </style>
+        </head>
+    <body>
+        <div class="ball1"></div>
+        <div class="ball2"></div>
+        <div class="ball3"></div>
+        <div class="ball4"></div>
+    </body>
+</html>
